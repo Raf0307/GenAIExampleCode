@@ -30,7 +30,6 @@
 <body>
 
     <h2>AI availble for use now!</h2>
-
     <table>
         <thead>
             <tr>
@@ -40,7 +39,8 @@
         </thead>
         <tbody>
             <tr>
-                <td><img src="Images/ChatGPT500.png" alt="Chat GPT"></td>
+                <td><a href="https://openai.com/">
+                <img src="Images/ChatGPT500.png" alt="Chat GPT"></a></td>
                 <td>
                     ChatGPT is a conversational language model
                     developed by OpenAI based on the GPT-3.5 architecture.
@@ -48,10 +48,11 @@
                     and it represents a class of models that leverage transformer
                     architecture for natural language processing tasks.
                 </td>
-                <td><input id="Button1" type="button" value="Add to Cart" /></td>
+                <td><button id="Button1" type="button" onclick="MyScript1()">Add to Cart </button></td>
             </tr>
             <tr>
-                <td><img src="Images/GithubCopilot395.png" alt="GitHub Copilot"></td>
+                <td><a href="https://github.com/features/copilot">
+                    <img src="Images/GithubCopilot395.png" alt="GitHub Copilot"></a></td>
                 <td>
                     GitHub Copilot is an AI-powered code completion tool
                     developed by GitHub in collaboration with OpenAI. It is
@@ -59,10 +60,11 @@
                     efficiently by providing intelligent code suggestions
                     directly within their integrated development environment (IDE)
                 </td>
-                <td><input id="Button2" type="button" value="Add to Cart" /></td>
+                <td><button id="Button2" type="button" onclick="MyScript2()">Add to Cart</button></td>
             </tr>
             <tr>
-                <td><img src="Images/BardAI.jpg" alt="Bard AI"></td>
+                <td><a href="https://bard.google.com/">
+                    <img src="Images/BardAI.jpg" alt="Bard AI"></a></td>
                 <td>
                     Bard is designed as an interface to an LLM that enables
                     users to collaborate with generative AI. We believe
@@ -71,11 +73,30 @@
                     they can augment their imagination, expand their curiosity,
                     and enhance their productivity
                 </td>
-                <td><input id="Button3" type="button" value="Add to Cart" /></td>
+                <td><button id="Button3" type="button" onclick="MyScript3()">Add to Cart</button></td>
             </tr>
             <!-- Add more rows as needed -->
         </tbody>
     </table>
 
+    <script>
+        function MyScript1() {
+            document.getElementById("Cart").innerHTML = "Added GPT to Cart"
+        }
+    </script>
+
+    <script>
+        function MyScript2() {
+            document.getElementById("Cart").innerHTML = "Added Copilot to Cart"
+        }
+    </script>
+
+    <script>
+        function MyScript3() {
+            document.getElementById("Cart").innerHTML = "Added Bard to Cart"
+        }
+    </script>
+
+    <p id="Cart">There are no items in your cart yet.</p>
 </body>
 </html>
